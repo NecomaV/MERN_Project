@@ -27,7 +27,7 @@ export const StartPage = () => {
         </div>
         <div className="start__main">
             <div className="start__main_text">
-                <h1>Welcome to smthing?</h1>
+                <h1>Write what you think</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel facilis placeat nulla repellendus! Cum at quas ea! Culpa rem pariatur enim, harum repudiandae modi architecto laborum ducimus placeat id dignissimos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit illo doloremque ipsam, incidunt labore quae temporibus unde nisi error, mollitia, provident atque id illum iure porro voluptates! Sint, amet!</p>
             </div>

@@ -13,6 +13,11 @@ function Login() {
         navig('/register')
     }
 
+    function redToMain(){
+        navig('/')
+    }
+
+
 
     async function loginUser(event) {
         event.preventDefault();
@@ -65,7 +70,8 @@ function Login() {
             <input type="submit" className='main__login_but' value="Login" />
 
         </form>
-        <a onClick={redToRegister}> Don't Have and account ? </a>
+        <a className='link_' onClick={redToRegister}> Don't Have an account ? </a>
+        <a className='link_' onClick={redToMain}> Back to Main Page </a>
     </div>
   )
 }

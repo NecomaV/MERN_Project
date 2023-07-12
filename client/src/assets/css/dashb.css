@@ -1,0 +1,57 @@
+.dash__main{
+    background: url('../img/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+h1{ 
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.dash__main_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.dash__form_inpt{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border:2px double #69faf1 ;
+    transition: .3s ease-in-out;
+    padding: .3rem;
+    font-size: 1.4rem;
+
+    text-align: center;
+}
+
+.dash__form_but{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border:2px double #2450c7;
+    background-color: #2450c7;
+    color: #fff;
+    transition: .3s ease-in-out;
+    padding: .3rem;
+    font-size: 1.4rem;
+}
+
+.dash__form_but:hover{
+    background-color: #4eb9b2;
+    border:2px double #4eb9b2;
+
+}
+
+#link{
+    margin-top: 2rem;
+}

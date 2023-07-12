@@ -1,11 +1,21 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import '../assets/css/register.css'
 
 function Register() {
     const navigate = useNavigate()
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    
+    function redToLogin(){
+        navigate('/login')
+    }
+
+    function redToMain(){
+        navigate('/')
+    }
 
     async function registerUser(event) {
         event.preventDefault();
@@ -32,9 +42,9 @@ function Register() {
 
 
   return (
-    <div>
-        <h1>Register</h1>
-        <form onSubmit={registerUser}>
+    <div className='main__reg'>
+        <h1 className='main__reg_h1'>Register</h1>
+        <form className='main__reg_form' onSubmit={registerUser}>
             <input 
             type="text"
             placeholder='Enter a name'
@@ -55,9 +65,10 @@ function Register() {
             onChange={(e) => setPassword(e.target.value)} 
             />
             <br/>
-            <input type="submit" value="Register" />
+            <input className='main__reg_but' type="submit" value="Register" />
         </form>
-
+        <a className='link_' onClick={redToLogin}> Already have an account ? </a>
+        <a className='link_' onClick={redToMain}> Back to Main Page </a>
     </div>
   )
 }
