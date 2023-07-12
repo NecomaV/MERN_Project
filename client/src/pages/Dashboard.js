@@ -74,7 +74,10 @@ function Dashboard() {
   return (
     <div className='dash__main'>
         <h1>This is your quote:</h1>
-        <h1 className='dash__main_quote'> {quote || 'No quote found'}</h1>
+        <blockquote>
+            <h1 className='dash__main_quote'> {quote || 'No quote found'}</h1>
+        </blockquote> 
+        
         <form onSubmit={updateQuote} className='dash__main_form'>
             <input 
                 type="text"

@@ -14,6 +14,18 @@ h1{
     margin-bottom: 2rem;
     font-size: 4rem;
 }
+blockquote{
+    padding: 2rem;
+}
+
+.dash__main_quote {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    border-color: #408bc9;
+    border-left-style: solid;
+    border-width: .25rem;
+}
 
 .dash__main_form{
     display: flex;

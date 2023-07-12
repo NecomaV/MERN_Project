@@ -8,7 +8,7 @@
 }
 
 body {
-  background: radial-gradient(ellipse at center, #ffffff 0%, #fffeea 35%, #ffffff 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 35%, #ffffff 100%);
   overflow: hidden;
 }
 
