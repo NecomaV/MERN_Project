@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
+import '../assets/css/login.css'
+import { useNavigate } from 'react-router-dom'
+
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navig = useNavigate()
+    
+    function redToRegister(){
+        navig('/register')
+    }
+
 
     async function loginUser(event) {
         event.preventDefault();
@@ -34,9 +44,9 @@ function Login() {
 
 
   return (
-    <div>
-        <h1>Login</h1>
-        <form onSubmit={loginUser}>
+    <div className='main__login'>
+        <h1 className='main__login_h1'>Login</h1>
+        <form className='main__login_form' onSubmit={loginUser}>
             <br/>
             <input 
             type="email"
@@ -48,13 +58,14 @@ function Login() {
             <input 
             type="password"
             value={password}
+            placeholder='Enter a password'
             onChange={(e) => setPassword(e.target.value)} 
             />
             <br/>
-            <input type="submit" value="Login" />
+            <input type="submit" className='main__login_but' value="Login" />
 
         </form>
-
+        <a onClick={redToRegister}> Don't Have and account ? </a>
     </div>
   )
 }

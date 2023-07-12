@@ -1,0 +1,69 @@
+
+.main__login{
+    background: url('../img/blob-scene-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main__login_h1 {
+    font-size: 11rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px solid #004052;
+    color: #fffeea;
+    text-fill-color: transparent;
+    text-stroke: 4px #004052;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #004052;
+    -moz-text-fill-color: transparent;
+}
+
+
+
+.main__login_form {
+    border: 1px solid black;
+    background-color: #004052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 2rem;
+
+    width: 40rem;
+    height: 20rem;
+}
+
+.main__login_form > input {
+    width: 15rem;
+    height: 3rem;
+
+    font-size: 1.3rem;
+
+    padding: .6rem;
+
+    border-radius: 1rem;
+}
+
+.main__login_but {
+    background-color: #004052;
+    color: #fffeea;
+    border:2px double #fffeea ;
+    transition: .3s ease-in-out;
+
+}
+
+.main__login_but:hover {
+    background-color: #fffeea;
+    color: #004052;
+}
+
+
+.main__login > a {
+    margin-top:2rem;
+}

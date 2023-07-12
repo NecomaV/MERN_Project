@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@400;600;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+
+body {
+  background: radial-gradient(ellipse at center, #ffffff 0%, #fffeea 35%, #ffffff 100%);
+  overflow: hidden;
+}
+
 
 .start{
     /* background-image: url('../img/layered-waves-haikei.svg'); */
@@ -24,25 +33,40 @@
     gap:40%;
 }
 
-.start__header nav ul li {
-    list-style-type: none;
-    font-size: 1.7rem;
-    margin-inline: 2rem;
-    color: #843b8c;
-}
-
-.start__header_links {
-    display: flex;
-}
-
 .start__header_butts{
     display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.7rem;
 }
+
+.start__header_butts li{ 
+  width: 11rem;
+  height: 4rem;
+  border: 2px double #004052;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:.3s ease-in-out;
+
+  border-radius: 1rem;
+}
+
+.start__header_butts li:hover{ 
+  background-color: #004052;
+  color: #fffeea;
+
+}
+/* button */
+
+/* button */
 
 .start__main{
    height: 100vh;
    display: flex;
    justify-content: center;
+   margin-top: 2rem;
+   gap: 11rem;
 }
 
 .start__main_text{
@@ -55,55 +79,53 @@
     font-size: 1.7rem;
 }
 
+.start__main_img img{
+  width: 45rem;
+}
 
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
 
-body {
-    background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
-    overflow: hidden;
+.wave {
+  background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.76, 0.25, 0.13, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
   }
-  
-  .ocean {
-    height: 5%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #015871;
+  100% {
+    margin-left: -1600px;
   }
-  
-  .wave {
-    background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
-    position: absolute;
-    top: -198px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
+}
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
   }
-  
-  .wave:nth-of-type(2) {
-    top: -175px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-    opacity: 1;
+  50% {
+    transform: translate3d(0, 5px, 0);
   }
-  
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
-  }
-  @keyframes swell {
-    0%,
-    100% {
-      transform: translate3d(0, -25px, 0);
-    }
-    50% {
-      transform: translate3d(0, 5px, 0);
-    }
-  }
-  .endWave{
-    display:none;
-  }
+}
+.endWave{
+  display:none;
+}
+
