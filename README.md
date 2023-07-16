@@ -1,4 +1,4 @@
-# README File: User Quote Management Web Application
+# User Quote Management Web Application
 
 This repository contains the source code for full stack a user quote management web application developed using React, JavaScript, HTML, CSS, Node.js, Express, and MongoDB.
 
@@ -40,7 +40,7 @@ Contributions to the User Quote Management Web Application are welcome. If you'd
 This project is licensed under the [GPL-3.0 license] License. For more details, please refer to the [GPL-3.0 license] docs.
 
 ## Credits
-- [Temirlan]: Developer
+- ![Temirlan](https://github.com/NecomaV):
 
 ## Contact
 If you have any questions, suggestions, or feedback, please feel free to reach out to [beken200225@gmail.com].
