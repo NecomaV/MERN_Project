@@ -28,8 +28,8 @@ export const StartPage = () => {
         <div className="start__main">
             <div className="start__main_text">
                 <h1>Write what you think</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel facilis placeat nulla repellendus! Cum at quas ea! Culpa rem pariatur enim, harum repudiandae modi architecto laborum ducimus placeat id dignissimos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi velit illo doloremque ipsam, incidunt labore quae temporibus unde nisi error, mollitia, provident atque id illum iure porro voluptates! Sint, amet!</p>
+                <p>We understand that words have the ability to penetrate our souls, evoke emotions, and shape our perspectives. Our website is a safe space for you to explore the profound impact of language on your thoughts, feelings, and actions.</p>
+                <p>But be warned: this journey is not always comfortable. It requires courage to confront the shadows within, to question your assumptions, and to challenge the narratives that no longer serve you. However, the rewards are immeasurable. By daring to dive into the depths of your own psyche, you'll emerge stronger, wiser, and more in tune with your authentic self.</p>
             </div>
             <div className="start__main_img">
                 <img src={svg} alt="svg" />
